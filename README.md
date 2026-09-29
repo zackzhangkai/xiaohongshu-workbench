@@ -67,6 +67,21 @@ npm test         # node --test tests/*.test.js
 npm run build    # vite build → dist/
 ```
 
+## 交流
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/readme/wechat-qr.jpg" width="240" alt="作者 Zack 的个人微信名片二维码，扫一扫添加好友"><br>
+      <sub>加我微信 · Zack</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/readme/group-qr.jpg" width="240" alt="微信群「AI 学习交流圈」二维码，扫码进群交流"><br>
+      <sub>AI 学习交流圈</sub>
+    </td>
+  </tr>
+</table>
+
 ## English
 
 A local-first Chinese-language AI workbench for content creators: Express + React, loopback-only, with streaming chat over any OpenAI-compatible endpoint, an embedded Chrome MV3 collector for Xiaohongshu (rednote) posts, a knowledge base with Markdown folder mirroring, manuscript/version management, subtitles, and optional local transcription — all data stays on your machine. MIT licensed.
