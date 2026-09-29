@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>关注主题 · 小红书工作台</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="search.css"></head>
+<body class="discovery"><main>
+<header><div><p class="eyebrow">XHS COLLECTOR · 主题发现</p><h1>找到值得收藏的内容</h1><p>关注一个主题，看看这次搜索里最受欢迎的十篇。</p></div><button id="workspace">打开知识库</button></header>
+<section class="search-box" aria-label="主题搜索">
+  <form id="search-form"><label for="topic">关注的主题</label><div class="search-line"><input id="topic" placeholder="例如：AI 编程、个人知识库" maxlength="80" required><button id="follow" type="button">关注主题</button></div>
+  <div id="topics" class="topics" aria-label="已关注主题"></div>
+  <div class="controls"><label for="content-type">内容类型<select id="content-type"><option value="image">只看图文</option><option value="video">只看视频</option><option value="all">全部</option></select></label><button id="search" class="primary" type="submit">搜索高赞前十</button><button id="stop" type="button" hidden>停止任务</button></div></form>
+  <p class="hint">会在浏览器中打开小红书并读取搜索页面。首次搜索需授权小红书网站访问；请先登录。按页面显示的点赞数排名，不代表全平台榜单。</p>
+</section>
+<p id="message" role="alert"></p><p id="job-status" role="status" aria-live="polite"></p>
+<section id="result-section" hidden><div class="results-heading"><div><h2 id="result-title">本次搜索高赞 TOP 10</h2><p id="scope"></p></div><span class="badge">按点赞排序</span></div>
+<div class="batch-bar"><label class="check"><input id="select-all" type="checkbox"> 选择可入库图文</label><label class="check"><input id="comments" type="checkbox"> 附带已加载评论</label><button id="save-selected" class="primary" disabled>加入知识库（0）</button></div>
+<p class="hint">视频可查看原文，暂不下载或转写；类型待确认的条目需先查看原文。图文入库时会重新核对详情，重复采集自动去重。</p><div id="results" class="results"></div></section>
+<div id="empty" class="empty"><span>01 / 选择主题</span><h2>把零散的搜索，变成你的素材库</h2><p>先输入主题。搜索完成后，勾选需要的图文即可保存。</p></div>
+<footer><button id="settings">连接设置</button><span>仅保存到本机 · 手动选择入库</span></footer>
+</main><script type="module" src="search-ui.js"></script></body></html>

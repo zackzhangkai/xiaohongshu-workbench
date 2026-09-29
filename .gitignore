@@ -1,0 +1,35 @@
+.env
+.DS_Store
+node_modules/
+dist/
+
+# 含密钥的模型配置及其任何备份/临时变体，永不提交
+data/model-config.json*
+
+# Imported personal content remains local
+data/notes/
+data/sessions/
+data/imports/
+data/import-backups/
+data/images/
+
+data/image-verification.json
+data/image-verification.json.tmp
+
+# Local workspace records
+data/exports/
+data/manuscripts/
+data/feeds/
+data/schedules.json
+data/schedules.json.tmp
+data/creator-profile.json
+data/creator-profile.json.tmp
+data/audio/
+data/video-renders/
+data/transcriptions/
+data/collector-key.json
+data/collector-backups/
+
+# Python 辅助（可选）
+__pycache__/
+*.zip

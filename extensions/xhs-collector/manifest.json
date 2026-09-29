@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "小红书采集助手",
+  "version": "0.2.1",
+  "description": "关注主题，筛选图文与视频，搜索高赞前十并将选中的图文保存到本机知识库。",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "https://*.xhscdn.com/*",
+    "https://*.rednotecdn.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "保存到工作台知识库"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "options_page": "options.html",
+  "optional_host_permissions": [
+    "https://www.xiaohongshu.com/*"
+  ]
+}
