@@ -1,6 +1,14 @@
-# 小红书工作台（xiaohongshu-workbench）
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%" alt="小红书工作台：本地优先的自媒体 AI 工作台——对话创作、知识库、采集、稿件管理，全部数据只留在本机">
+</p>
 
-本地优先的自媒体 AI 工作台：Node/Express 后端 + React 前端，界面为中文。把对话创作、知识库、小红书采集、稿件管理、字幕、本地语音/视频处理放进一台只绑定 `127.0.0.1` 的服务里——数据不出本机，不注册账号。
+本地优先的自媒体 AI 工作台（[xiaohongshu-workbench](https://github.com/zackzhangkai/xiaohongshu-workbench)）：Node/Express 后端 + React 前端，界面为中文。把对话创作、知识库、小红书采集、稿件管理、字幕、本地语音/视频处理放进一台只绑定 `127.0.0.1` 的服务里——数据不出本机，不注册账号。
+
+## 工作流
+
+<p align="center">
+  <img src="./assets/readme/workflow.svg" width="100%" alt="工作流示意图：Chrome 采集插件把笔记入库知识库，AI 对话在技能与生图支持下创作，经稿件库导出 ZIP、Finder 或一键复制去发布；底部标注全部数据留在本机、服务仅监听 127.0.0.1">
+</p>
 
 ## 功能
 

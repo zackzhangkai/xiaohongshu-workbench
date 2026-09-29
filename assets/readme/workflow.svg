@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="wf-title wf-desc">
+  <title id="wf-title">工作流：采集 → 知识库 → AI 创作 → 稿件导出</title>
+  <desc id="wf-desc">四段流程图：Chrome 采集插件把小红书笔记批量入库，知识库保存笔记与评论并可本地镜像，AI 对话在 20 个技能与生图工具支持下创作，最后经稿件库导出 ZIP、Finder 或一键复制去发布；底部横条标注全部数据留在本机、服务仅监听 127.0.0.1。</desc>
+
+  <rect width="1200" height="330" rx="24" fill="#FAF6EF"/>
+
+  <g id="stage-collect" transform="translate(64 56)">
+    <rect width="238" height="170" rx="16" fill="#FFFFFF" stroke="#E8DFD0"/>
+    <circle cx="50" cy="50" r="22" fill="none" stroke="#E9405A" stroke-width="5"/>
+    <circle cx="50" cy="50" r="9" fill="#E9405A"/>
+    <path d="M 88 38 h 54 v 24 h -40 l -10 9 v -9 h -4 z" fill="none" stroke="#8A7E6E" stroke-width="3"/>
+    <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="26" font-weight="600" fill="#2B2620">Chrome 采集</text>
+    <text x="32" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#8A7E6E">单篇 / 高赞批量入库</text>
+  </g>
+
+  <g id="stage-knowledge" transform="translate(362 56)">
+    <rect width="238" height="170" rx="16" fill="#FFFFFF" stroke="#E8DFD0"/>
+    <rect x="44" y="34" width="52" height="34" rx="6" fill="none" stroke="#8A7E6E" stroke-width="3"/>
+    <rect x="52" y="26" width="52" height="34" rx="6" fill="#FAF6EF" stroke="#E9405A" stroke-width="3"/>
+    <rect x="60" y="18" width="52" height="34" rx="6" fill="#FFFFFF" stroke="#E8DFD0" stroke-width="3"/>
+    <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="26" font-weight="600" fill="#2B2620">知识库</text>
+    <text x="32" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#8A7E6E">笔记 · 评论 · 镜像</text>
+  </g>
+
+  <g id="stage-create" transform="translate(660 56)">
+    <rect width="238" height="170" rx="16" fill="#FFFFFF" stroke="#E8DFD0"/>
+    <path d="M 40 30 h 92 a 12 12 0 0 1 12 12 v 30 a 12 12 0 0 1 -12 12 h -58 l -14 13 v -13 h -20 a 12 12 0 0 1 -12 -12 v -30 a 12 12 0 0 1 12 -12 z" fill="none" stroke="#8A7E6E" stroke-width="3"/>
+    <path d="M 118 44 l 3.5 8 l 8.5 3.5 l -8.5 3.5 l -3.5 8 l -3.5 -8 l -8.5 -3.5 l 8.5 -3.5 z" fill="#E9405A"/>
+    <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="26" font-weight="600" fill="#2B2620">AI 对话创作</text>
+    <text x="32" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#8A7E6E">技能 · 生图 · SSE 流式</text>
+  </g>
+
+  <g id="stage-export" transform="translate(958 56)">
+    <rect width="178" height="170" rx="16" fill="#FFFFFF" stroke="#E8DFD0"/>
+    <rect x="44" y="34" width="60" height="44" rx="6" fill="none" stroke="#8A7E6E" stroke-width="3"/>
+    <path d="M 44 48 h 60 M 60 34 v 14 h 28 v -14" fill="none" stroke="#8A7E6E" stroke-width="3"/>
+    <rect x="78" y="58" width="22" height="18" rx="4" fill="#E9405A"/>
+    <text x="32" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="26" font-weight="600" fill="#2B2620">稿件导出</text>
+    <text x="32" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#8A7E6E">ZIP · 一键复制</text>
+  </g>
+
+  <g id="flow-arrows" stroke="#C9BBA6" stroke-width="3" fill="none">
+    <path d="M 306 141 h 46" marker-end="url(#arrow)"/>
+    <path d="M 604 141 h 42" marker-end="url(#arrow)"/>
+    <path d="M 902 141 h 42" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C9BBA6"/>
+    </marker>
+  </defs>
+
+  <!-- 隐私底条 -->
+  <g id="privacy-bar">
+    <rect x="64" y="252" width="1072" height="46" rx="23" fill="#F1E9DB"/>
+    <path transform="translate(173 4)" d="M 100 262 l 14 5 v 9 c 0 7 6 12 14 14 c 8 -2 14 -7 14 -14 v -9 l 14 -5 l -14 -5 v -4 h -28 v 4 z" fill="none" stroke="#2B2620" stroke-width="3"/>
+    <text x="345" y="282" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="20" fill="#2B2620">全部数据留在本机 · 服务仅监听 127.0.0.1 · 不注册账号、不上传云端</text>
+  </g>
+</svg>
