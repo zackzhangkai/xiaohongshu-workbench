@@ -15,7 +15,9 @@ test('skill metadata handles BOM, CRLF, multiline blocks and quoted strings', ()
 const maybe = fs.existsSync(fileURLToPath(new URL('../skills/xhs-title', import.meta.url))) ? test : test.skip;
 maybe('real bundled title description is complete; contextNote fallback does not alter prompts', () => {
   const skills = listSkills(fileURLToPath(new URL('../skills', import.meta.url)));
-  assert.match(skills.find(s => s.id === 'xhs-title').description, /75/);
+  assert.match(skills.find(s => s.id === 'xhs-title').description, /36/);
   assert.match(skills.find(s => s.id === 'image-prompt-optimizer').description, /提示词/);
-  assert.match(buildSkillPrompt(fileURLToPath(new URL('../skills/xhs-title', import.meta.url))), /description: \|/);
+  const titlePrompt = buildSkillPrompt(fileURLToPath(new URL('../skills/xhs-title', import.meta.url)));
+  assert.match(titlePrompt, /description: \|/);
+  assert.match(titlePrompt, /F01/); // references/formulas.md 随主体一并内联
 });
